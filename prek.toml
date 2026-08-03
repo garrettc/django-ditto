@@ -25,6 +25,27 @@ hooks = [
   { id = "check-added-large-files" }
 ]
 
+
+[[repos]]
+repo = "https://github.com/asottile/pyupgrade"
+rev = "v3.21.2"
+hooks = [
+  {
+    id = "pyupgrade",
+    args = ["--py310-plus"]
+  }
+]
+
+[[ repos ]]
+repo = "https://github.com/adamchainz/django-upgrade"
+rev = "1.31.1"
+hooks = [
+  {
+    id =  "django-upgrade",
+    args = ["--target-version", "5.2"]
+  }
+]
+
 [[repos]]
 repo = "https://github.com/rbubley/mirrors-prettier"
 rev = "v3.9.6"
@@ -48,14 +69,4 @@ hooks = [
     args = ["--fix"]
   },
   { id = "ruff-format" }
-]
-
-[[repos]]
-repo = "https://github.com/asottile/pyupgrade"
-rev = "v3.21.2"
-hooks = [
-  {
-    id = "pyupgrade",
-    args = ["--py310-plus"]
-  }
 ]
