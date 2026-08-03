@@ -8,8 +8,8 @@ urlpatterns = [
     path("", view=views.HomeView.as_view(), name="home"),
     path("albums/", view=views.PhotosetListView.as_view(), name="photoset_list"),
     path("tags/", view=views.TagListView.as_view(), name="tag_list"),
-    re_path(
-        r"^tags/(?P<slug>[^/]+)/$",
+    path(
+        "tags/<str:slug>/",
         view=views.TagDetailView.as_view(),
         name="tag_detail",
     ),

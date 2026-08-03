@@ -64,10 +64,9 @@ class AccountAdmin(admin.ModelAdmin):
         "time_modified",
     )
 
+    @admin.display(boolean=True)
     def has_credentials(self, obj):
         return obj.has_credentials()
-
-    has_credentials.boolean = True
 
 
 @admin.register(User)
@@ -132,10 +131,9 @@ class UserAdmin(admin.ModelAdmin):
         "username",
     )
 
+    @admin.display(description="")
     def show_avatar(self, instance):
         return mark_safe(f'<img src="{instance.avatar_url}" width="24" height="24" />')
-
-    show_avatar.short_description = ""
 
 
 @admin.register(Photoset)
@@ -440,6 +438,7 @@ class PhotoAdmin(DittoItemModelAdmin):
     ]
     raw_id_fields = ("user",)
 
+    @admin.display(description="Thumbnail")
     def show_thumb(self, instance):
         return mark_safe(
             f'<img src="{instance.thumbnail_url}" '
@@ -447,8 +446,7 @@ class PhotoAdmin(DittoItemModelAdmin):
             f'height="{instance.thumbnail_height}" />'
         )
 
-    show_thumb.short_description = "Thumbnail"
-
+    @admin.display(description="Small image")
     def show_image(self, instance):
         return mark_safe(
             f'<img src="{instance.small_url}" '
@@ -456,10 +454,7 @@ class PhotoAdmin(DittoItemModelAdmin):
             f'height="{instance.small_height}" />'
         )
 
-    show_image.short_description = "Small image"
-
+    @admin.display(description="Taken year")
     def taken_year_str(self, instance):
         "So Admin doesn't add a comma, like '2,016'."
         return str(instance.taken_year)
-
-    taken_year_str.short_description = "Taken year"

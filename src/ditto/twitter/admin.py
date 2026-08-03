@@ -153,14 +153,14 @@ class MediaAdmin(admin.ModelAdmin):
     )
     exclude = ("tweets",)
 
+    @admin.display(description="")
     def show_thumb(self, instance):
         return mark_safe(
             f'<img src="{instance.thumbnail_url}" width="{instance.thumbnail_w}" '
             f'height="{instance.thumbnail_h}" />'
         )
 
-    show_thumb.short_description = ""
-
+    @admin.display(description="Image")
     def show_image(self, instance):
         if instance.media_type == "photo":
             html = (
@@ -175,8 +175,6 @@ class MediaAdmin(admin.ModelAdmin):
                 "</video>"
             )
         return mark_safe(html)
-
-    show_image.short_description = "Image"
 
 
 @admin.register(Tweet)
@@ -346,7 +344,6 @@ class UserAdmin(admin.ModelAdmin):
         "time_modified",
     )
 
+    @admin.display(description="")
     def show_avatar(self, instance):
         return mark_safe(f'<img src="{instance.avatar_url}" width="24" height="24" />')
-
-    show_avatar.short_description = ""
