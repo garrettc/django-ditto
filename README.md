@@ -5,7 +5,8 @@
 [![codecov](https://codecov.io/gh/philgyford/django-ditto/branch/main/graph/badge.svg?token=T7TMMDS64A)](https://codecov.io/gh/philgyford/django-ditto)
 [![image](https://readthedocs.org/projects/django-ditto/badge/?version=stable)](https://django-ditto.readthedocs.io/en/stable/?badge=stable "Documentation status")
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![prek](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/j178/prek/master/docs/assets/badge-v0.json)](https://github.com/j178/prek)
+
 
 A collection of Django apps for copying things from third-party sites and services. For Django 5.2 and 6.0 on Python 3.10 upwards.
 
