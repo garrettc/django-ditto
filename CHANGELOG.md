@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- None
+### Changed
+
+- Drop support for Django 4.2 and 5.1
+- Add support for Django 6.0
+- Switch from pre-commit to prek
 
 ## [3.7.0] - 2025-10-22
 
