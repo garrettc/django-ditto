@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction &mdash; Django Ditto 3.7.0 documentation</title>
+  <title>Introduction &mdash; Django Ditto 3.8.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=229cbe3b"></script>
+      <script src="_static/documentation_options.js?v=948f11bf"></script>
       <script src="_static/doctools.js?v=9a2dae69"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -94,11 +94,12 @@
   <section id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
 <p>A collection of Django apps for copying things from third-party sites and services. If something doesn’t make sense, <a class="reference external" href="mailto:phil&#37;&#52;&#48;gyford&#46;com">email Phil Gyford</a> and I’ll try and clarify it.</p>
-<p>Requires Python 3.10 to 3.14, and Django 4.2, 5.1 or 5.2.</p>
+<p>For Django 5.2 and 6.0 on Python 3.10 upwards.</p>
 <p><a class="reference external" href="https://github.com/philgyford/django-ditto/tree/main/screenshots">See screenshots of a site using the supplied templates.</a></p>
 <section id="services-covered">
 <h2>Services covered<a class="headerlink" href="#services-covered" title="Link to this heading"></a></h2>
-<p>Currently, Ditto can copy these things from these services:</p>
+<p>Currently, Ditto can copy these things from these services (but we should
+assume Twitter/X no longer works):</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt><a class="reference external" href="https://flickr.com/">Flickr</a></dt><dd><ul>
@@ -153,7 +154,7 @@
 <li><p>Template tags for common things (eg, most recent Tweets, or Flickr photos uploaded on a particular day)</p></li>
 </ul>
 <p>You could use the whole lot to create a minimal site that displays your Tweets,
-photos, etc – see the <code class="docutils literal notranslate"><span class="pre">devproject/</span></code> for a bare-bones example.</p>
+photos, etc.</p>
 <p>Or you might want to use the management commands, Models and Admin to fetch and
 store your data, but use that data in your own Views and Templates, maybe using
 the Template tags. Or some other combination.</p>

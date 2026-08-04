@@ -84,18 +84,18 @@ You'll need to have all versions of python available that are tested against (se
 
     $ tox
 
-To run tests in only one environment, specify it. In this case, Python 3.13 and
-Django 4.2:
+To run tests in only one environment, specify it. In this case, Python 3.14 and
+Django 6.0:
 
 .. code-block:: shell
 
-    $ tox -e py313-django51
+    $ tox -e py314-django60
 
 To run a specific test, add its path after ``--``, eg:
 
 .. code-block:: shell
 
-    $ tox -e py313-django51 -- tests.flickr.test_views.HomeViewTests.test_home_templates
+    $ tox -e py314-django60 -- tests.flickr.test_views.HomeViewTests.test_home_templates
 
 Running the tests in all environments will generate coverage output. There will
 also be an ``htmlcov/`` directory containing an HTML report. You can also

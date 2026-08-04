@@ -4,7 +4,7 @@ Introduction
 
 A collection of Django apps for copying things from third-party sites and services. If something doesn't make sense, `email Phil Gyford <mailto:phil@gyford.com>`_ and I'll try and clarify it.
 
-Requires Python 3.10 to 3.14, and Django 4.2, 5.1 or 5.2.
+For Django 5.2 and 6.0 on Python 3.10 upwards.
 
 `See screenshots of a site using the supplied templates. <https://github.com/philgyford/django-ditto/tree/main/screenshots>`_
 
@@ -13,7 +13,8 @@ Requires Python 3.10 to 3.14, and Django 4.2, 5.1 or 5.2.
 Services covered
 ****************
 
-Currently, Ditto can copy these things from these services:
+Currently, Ditto can copy these things from these services (but we should
+assume Twitter/X no longer works):
 
 - `Flickr <https://flickr.com/>`_
     - Photos
@@ -55,7 +56,7 @@ The Ditto apps provide:
 - Template tags for common things (eg, most recent Tweets, or Flickr photos uploaded on a particular day)
 
 You could use the whole lot to create a minimal site that displays your Tweets,
-photos, etc – see the ``devproject/`` for a bare-bones example.
+photos, etc.
 
 Or you might want to use the management commands, Models and Admin to fetch and
 store your data, but use that data in your own Views and Templates, maybe using
