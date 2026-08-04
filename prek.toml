@@ -47,20 +47,6 @@ hooks = [
 ]
 
 [[repos]]
-repo = "https://github.com/rbubley/mirrors-prettier"
-rev = "v3.9.6"
-hooks = [
-  {
-    id = "prettier",
-    types_or = [
-      "css",
-      "javascript",
-      "json"
-    ]
-  }
-]
-
-[[repos]]
 repo = "https://github.com/astral-sh/ruff-pre-commit"
 rev = "v0.16.1"
 hooks = [
