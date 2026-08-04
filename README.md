@@ -14,13 +14,17 @@ A collection of Django apps for copying things from third-party sites and servic
 
 [See screenshots of a site using the supplied templates.](https://github.com/philgyford/django-ditto/tree/main/screenshots)
 
-Install using [pip](https://pip.pypa.io/en/stable/):
+Install using [uv](https://docs.astral.sh/uv/):
+
+    $ uv add django-ditto
+
+Or [pip](https://pip.pypa.io/en/stable/):
 
     $ pip install django-ditto
 
 NOTE 1: It will install [Pillow](http://pillow.readthedocs.io/en/latest/), among other things, which has prerequisites of its own, such as libjpeg and zlib. Sorry.
 
-NOTE 2: As of 2023 I'm unsure how well the Twitter integration still works given the state of its API etc.
+NOTE 2: As of 2023 let's assume the Twitter/X integration no longer works.
 
 Currently, Ditto can copy these things from these services:
 
