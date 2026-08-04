@@ -8,7 +8,6 @@ classifiers = [
   "Framework :: Django :: 5.2",
   "Framework :: Django :: 6.0",
   "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
   "Natural Language :: English",
   "Operating System :: OS Independent",
   "Programming Language :: Python",
@@ -35,7 +34,7 @@ dependencies = [
 description = "A Django app to copy stuff from your accounts on Flickr, Last.fm, Pinboard and Twitter."
 dynamic = ["version"]
 keywords = ["ditto", "twitter", "flickr", "pinboard", "last.fm"]
-license = { file = "LICENSE" }
+license-files = [ "LICENSE" ]
 name = "django-ditto"
 readme = "README.md"
 requires-python = ">=3.10"
