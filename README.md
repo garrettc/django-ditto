@@ -8,7 +8,7 @@
 [![prek](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/j178/prek/master/docs/assets/badge-v0.json)](https://github.com/j178/prek)
 
 
-A collection of Django apps for copying things from third-party sites and services. For Django 5.2 and 6.0 on Python 3.10 upwards.
+A collection of Django apps for copying things from third-party sites and services. For Django 5.2, 6.0 and 6.1 on Python 3.10 upwards.
 
 [Read the documentation.](http://django-ditto.readthedocs.io/en/latest/)
 

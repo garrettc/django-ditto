@@ -4,7 +4,7 @@ Introduction
 
 A collection of Django apps for copying things from third-party sites and services. If something doesn't make sense, `email Phil Gyford <mailto:phil@gyford.com>`_ and I'll try and clarify it.
 
-For Django 5.2 and 6.0 on Python 3.10 upwards.
+For Django 5.2, 6.0 and 6.1 on Python 3.10 upwards.
 
 `See screenshots of a site using the supplied templates. <https://github.com/philgyford/django-ditto/tree/main/screenshots>`_
 
