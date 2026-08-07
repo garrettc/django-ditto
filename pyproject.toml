@@ -53,6 +53,9 @@ requires-python = ">=3.10"
 dev = [
   "coverage[toml]",
   "factory-boy",
+  # Replacing freezegun with time-machine means doing a fair bit of work
+  # because they handle timezones very differently. So it won't be as quick
+  # as you think.
   "freezegun",
   "pre-commit",
   "responses",
